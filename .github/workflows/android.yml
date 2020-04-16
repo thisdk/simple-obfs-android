@@ -20,8 +20,9 @@ jobs:
       run: |
         git submodule update --init --recursive
         sbt clean android:package-release
-    - name: Scan file
-      run: |
-        ls 
-        ls target
+    - name: Upload to artifact file
+      uses: actions/upload-artifact@v1
+      with:
+        name: simple-obfs-android
+        path: target/android/output/
         
