@@ -23,5 +23,5 @@ jobs:
     - name: Scan file
       run: |
         ls 
-        ls build
+        ls target
         
