@@ -20,3 +20,8 @@ jobs:
       run: |
         git submodule update --init --recursive
         sbt clean android:package-release
+    - name: Scan file
+      run: |
+        ls 
+        ls build
+        
